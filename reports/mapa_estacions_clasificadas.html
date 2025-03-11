@@ -1,0 +1,2176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_107650d07d5badfb656f352003e8b3f3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_107650d07d5badfb656f352003e8b3f3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_107650d07d5badfb656f352003e8b3f3 = L.map(
+                "map_107650d07d5badfb656f352003e8b3f3",
+                {
+                    center: [41.3784, 2.1936],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c71d87b041f9095a4ed63af7de85904c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c71d87b041f9095a4ed63af7de85904c.addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var marker_342522bdb62de601ff58e2fc5b189ac7 = L.marker(
+                [41.4039, 2.2045],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_db47942f7a45bd8e7625e5a3bd668e58 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aa90fcf0dc6b5e1cd3181af6b14ed928 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b080e0e53319687297f90b0797c8c1a4 = $(`<div id="html_b080e0e53319687297f90b0797c8c1a4" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Poblenou<br>Ubicació: Plaça Josep Trueta (Pujades - Lope de Vega)<br>Districte: Sant Marti<br>Categoria: Playa</div>`)[0];
+                popup_aa90fcf0dc6b5e1cd3181af6b14ed928.setContent(html_b080e0e53319687297f90b0797c8c1a4);
+            
+        
+
+        marker_342522bdb62de601ff58e2fc5b189ac7.bindPopup(popup_aa90fcf0dc6b5e1cd3181af6b14ed928)
+        ;
+
+        
+    
+    
+                marker_342522bdb62de601ff58e2fc5b189ac7.setIcon(icon_db47942f7a45bd8e7625e5a3bd668e58);
+            
+    
+            var marker_41c60eec8a3c400383899ec55a39b35e = L.marker(
+                [41.4039, 2.2045],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_d919e81ada790756bac0bb5871c83a1c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6b5737d764f0eb948416b574cd8ff443 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_062ab911e10d80636116497ba2c2457c = $(`<div id="html_062ab911e10d80636116497ba2c2457c" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Poblenou<br>Ubicació: Plaça Josep Trueta (Pujades - Lope de Vega)<br>Districte: Sant Marti<br>Categoria: Playa</div>`)[0];
+                popup_6b5737d764f0eb948416b574cd8ff443.setContent(html_062ab911e10d80636116497ba2c2457c);
+            
+        
+
+        marker_41c60eec8a3c400383899ec55a39b35e.bindPopup(popup_6b5737d764f0eb948416b574cd8ff443)
+        ;
+
+        
+    
+    
+                marker_41c60eec8a3c400383899ec55a39b35e.setIcon(icon_d919e81ada790756bac0bb5871c83a1c);
+            
+    
+            var marker_a733ff1b93924188d226988d12adbf5d = L.marker(
+                [41.4039, 2.2045],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_3e71e35e7d75ed800de43f3569a98624 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_18b5dc5227cdce192f09e6eb13d06ab1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd49e3352d90df9c1d4276fd84a33754 = $(`<div id="html_bd49e3352d90df9c1d4276fd84a33754" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Poblenou<br>Ubicació: Plaça Josep Trueta (Pujades - Lope de Vega)<br>Districte: Sant Marti<br>Categoria: Playa</div>`)[0];
+                popup_18b5dc5227cdce192f09e6eb13d06ab1.setContent(html_bd49e3352d90df9c1d4276fd84a33754);
+            
+        
+
+        marker_a733ff1b93924188d226988d12adbf5d.bindPopup(popup_18b5dc5227cdce192f09e6eb13d06ab1)
+        ;
+
+        
+    
+    
+                marker_a733ff1b93924188d226988d12adbf5d.setIcon(icon_3e71e35e7d75ed800de43f3569a98624);
+            
+    
+            var marker_7e38ad127e7c8ee84a1fa0f27751f3c8 = L.marker(
+                [41.4039, 2.2045],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_49c58dd36a0212e8a39fa4a74e4d9830 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_83707869195856351d7ebedfb9fd7c95 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c5c15c795db11b9b650e666f8ed32b84 = $(`<div id="html_c5c15c795db11b9b650e666f8ed32b84" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Poblenou<br>Ubicació: Plaça Josep Trueta (Pujades - Lope de Vega)<br>Districte: Sant Marti<br>Categoria: Playa</div>`)[0];
+                popup_83707869195856351d7ebedfb9fd7c95.setContent(html_c5c15c795db11b9b650e666f8ed32b84);
+            
+        
+
+        marker_7e38ad127e7c8ee84a1fa0f27751f3c8.bindPopup(popup_83707869195856351d7ebedfb9fd7c95)
+        ;
+
+        
+    
+    
+                marker_7e38ad127e7c8ee84a1fa0f27751f3c8.setIcon(icon_49c58dd36a0212e8a39fa4a74e4d9830);
+            
+    
+            var marker_e435109b4c5fdd28935a758e29900fbf = L.marker(
+                [41.3788, 2.1331],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_0593fca67389ac76c44959194a0cd7dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cda3c4388b018d4b003386e974aa05d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d7cb9a0566a29b9abb62f8025c625e7 = $(`<div id="html_7d7cb9a0566a29b9abb62f8025c625e7" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Sants<br>Ubicació: Jardins de Can Mantega (Joan Güell - Violant d’Hongria)<br>Districte: Sants-Montjuic<br>Categoria: Playa</div>`)[0];
+                popup_cda3c4388b018d4b003386e974aa05d7.setContent(html_7d7cb9a0566a29b9abb62f8025c625e7);
+            
+        
+
+        marker_e435109b4c5fdd28935a758e29900fbf.bindPopup(popup_cda3c4388b018d4b003386e974aa05d7)
+        ;
+
+        
+    
+    
+                marker_e435109b4c5fdd28935a758e29900fbf.setIcon(icon_0593fca67389ac76c44959194a0cd7dd);
+            
+    
+            var marker_fada992b0c9bc40e1cbcb36e33c786da = L.marker(
+                [41.3788, 2.1331],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_eb3a1e8edf40cbe8bfd8256fff57a125 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_618899d4e73723d4622e8295819e261f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_646d226a233fb7096923e3d0f3a3069c = $(`<div id="html_646d226a233fb7096923e3d0f3a3069c" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Sants<br>Ubicació: Jardins de Can Mantega (Joan Güell - Violant d’Hongria)<br>Districte: Sants-Montjuic<br>Categoria: Playa</div>`)[0];
+                popup_618899d4e73723d4622e8295819e261f.setContent(html_646d226a233fb7096923e3d0f3a3069c);
+            
+        
+
+        marker_fada992b0c9bc40e1cbcb36e33c786da.bindPopup(popup_618899d4e73723d4622e8295819e261f)
+        ;
+
+        
+    
+    
+                marker_fada992b0c9bc40e1cbcb36e33c786da.setIcon(icon_eb3a1e8edf40cbe8bfd8256fff57a125);
+            
+    
+            var marker_fd752ea78cdd9ded93a5c94855571585 = L.marker(
+                [41.3788, 2.1331],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_008d7b89254f6089d897f79b27c54799 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2d23d79aeb76fada131e5e5babed9226 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cecf954d45bf610e90db3cd4cd4b2d7c = $(`<div id="html_cecf954d45bf610e90db3cd4cd4b2d7c" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Sants<br>Ubicació: Jardins de Can Mantega (Joan Güell - Violant d’Hongria)<br>Districte: Sants-Montjuic<br>Categoria: Playa</div>`)[0];
+                popup_2d23d79aeb76fada131e5e5babed9226.setContent(html_cecf954d45bf610e90db3cd4cd4b2d7c);
+            
+        
+
+        marker_fd752ea78cdd9ded93a5c94855571585.bindPopup(popup_2d23d79aeb76fada131e5e5babed9226)
+        ;
+
+        
+    
+    
+                marker_fd752ea78cdd9ded93a5c94855571585.setIcon(icon_008d7b89254f6089d897f79b27c54799);
+            
+    
+            var marker_31e398332d2aef4fe559e43c89683122 = L.marker(
+                [41.3853, 2.1538],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_1be7ca33242f0f6aeac6c7ad1853499e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0510325a79748c958aa7b1d0701a8e0d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bcf35dc8f2aceacde3b9528f71f7afb2 = $(`<div id="html_bcf35dc8f2aceacde3b9528f71f7afb2" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Eixample<br>Ubicació: Av. Roma - c/ Comte Urgell<br>Districte: Eixample<br>Categoria: Playa</div>`)[0];
+                popup_0510325a79748c958aa7b1d0701a8e0d.setContent(html_bcf35dc8f2aceacde3b9528f71f7afb2);
+            
+        
+
+        marker_31e398332d2aef4fe559e43c89683122.bindPopup(popup_0510325a79748c958aa7b1d0701a8e0d)
+        ;
+
+        
+    
+    
+                marker_31e398332d2aef4fe559e43c89683122.setIcon(icon_1be7ca33242f0f6aeac6c7ad1853499e);
+            
+    
+            var marker_47fe03765a74fcf79c198239e7937199 = L.marker(
+                [41.3853, 2.1538],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_d2079e39a2598e199bd8fd8f75bfade5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2127013b5bed70b2c25127a8e4e5416f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_550b70e4865220fade7275b7a1a4fcdc = $(`<div id="html_550b70e4865220fade7275b7a1a4fcdc" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Eixample<br>Ubicació: Av. Roma - c/ Comte Urgell<br>Districte: Eixample<br>Categoria: Playa</div>`)[0];
+                popup_2127013b5bed70b2c25127a8e4e5416f.setContent(html_550b70e4865220fade7275b7a1a4fcdc);
+            
+        
+
+        marker_47fe03765a74fcf79c198239e7937199.bindPopup(popup_2127013b5bed70b2c25127a8e4e5416f)
+        ;
+
+        
+    
+    
+                marker_47fe03765a74fcf79c198239e7937199.setIcon(icon_d2079e39a2598e199bd8fd8f75bfade5);
+            
+    
+            var marker_8213832a1b6703db4e4051569995b417 = L.marker(
+                [41.3853, 2.1538],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_53d334e8da93672fbb7cd6c623f8d157 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c4aea86aae1b84e5283d604772e121bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6b3908a704f0ea440c99069f5555d1a6 = $(`<div id="html_6b3908a704f0ea440c99069f5555d1a6" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Eixample<br>Ubicació: Av. Roma - c/ Comte Urgell<br>Districte: Eixample<br>Categoria: Playa</div>`)[0];
+                popup_c4aea86aae1b84e5283d604772e121bb.setContent(html_6b3908a704f0ea440c99069f5555d1a6);
+            
+        
+
+        marker_8213832a1b6703db4e4051569995b417.bindPopup(popup_c4aea86aae1b84e5283d604772e121bb)
+        ;
+
+        
+    
+    
+                marker_8213832a1b6703db4e4051569995b417.setIcon(icon_53d334e8da93672fbb7cd6c623f8d157);
+            
+    
+            var marker_1c21657012800fae3b84a4629caf454a = L.marker(
+                [41.3853, 2.1538],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_bfffa79dc248360e5f6d631f2318563f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_72c3fee1d48d1d88fc16941bc9badbdf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2d24abbb4e5bdf5faaad3d2e48fc2523 = $(`<div id="html_2d24abbb4e5bdf5faaad3d2e48fc2523" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Eixample<br>Ubicació: Av. Roma - c/ Comte Urgell<br>Districte: Eixample<br>Categoria: Playa</div>`)[0];
+                popup_72c3fee1d48d1d88fc16941bc9badbdf.setContent(html_2d24abbb4e5bdf5faaad3d2e48fc2523);
+            
+        
+
+        marker_1c21657012800fae3b84a4629caf454a.bindPopup(popup_72c3fee1d48d1d88fc16941bc9badbdf)
+        ;
+
+        
+    
+    
+                marker_1c21657012800fae3b84a4629caf454a.setIcon(icon_bfffa79dc248360e5f6d631f2318563f);
+            
+    
+            var marker_984184ff87284cc9efbbf49ed6ee99a0 = L.marker(
+                [41.3853, 2.1538],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_8f30f49e0880cc133755a06a8a9d6f7c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_15170ba818c0a3fac93b1daafd859693 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8036ed11319c93d3e014b9385fd27869 = $(`<div id="html_8036ed11319c93d3e014b9385fd27869" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Eixample<br>Ubicació: Av. Roma - c/ Comte Urgell<br>Districte: Eixample<br>Categoria: Playa</div>`)[0];
+                popup_15170ba818c0a3fac93b1daafd859693.setContent(html_8036ed11319c93d3e014b9385fd27869);
+            
+        
+
+        marker_984184ff87284cc9efbbf49ed6ee99a0.bindPopup(popup_15170ba818c0a3fac93b1daafd859693)
+        ;
+
+        
+    
+    
+                marker_984184ff87284cc9efbbf49ed6ee99a0.setIcon(icon_8f30f49e0880cc133755a06a8a9d6f7c);
+            
+    
+            var marker_7b37467c72334f84d7dec99b6676b9e7 = L.marker(
+                [41.3853, 2.1538],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_41b90cdbb88f9498077f98bf272f5621 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_24549ed94b1f18433c639db14ebb0cbc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b6227e1aa6a7a56693e7279e9f4b5334 = $(`<div id="html_b6227e1aa6a7a56693e7279e9f4b5334" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Eixample<br>Ubicació: Av. Roma - c/ Comte Urgell<br>Districte: Eixample<br>Categoria: Playa</div>`)[0];
+                popup_24549ed94b1f18433c639db14ebb0cbc.setContent(html_b6227e1aa6a7a56693e7279e9f4b5334);
+            
+        
+
+        marker_7b37467c72334f84d7dec99b6676b9e7.bindPopup(popup_24549ed94b1f18433c639db14ebb0cbc)
+        ;
+
+        
+    
+    
+                marker_7b37467c72334f84d7dec99b6676b9e7.setIcon(icon_41b90cdbb88f9498077f98bf272f5621);
+            
+    
+            var marker_770a579ea55c9512f512aa11fbcceac1 = L.marker(
+                [41.3853, 2.1538],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_4b07a03469ff829f3da442f44e31385a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d0f9abb3da8fba77e40ebe4279ba56b3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6cd8d6de7c2b775b42d0e59f3b13be82 = $(`<div id="html_6cd8d6de7c2b775b42d0e59f3b13be82" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Eixample<br>Ubicació: Av. Roma - c/ Comte Urgell<br>Districte: Eixample<br>Categoria: Playa</div>`)[0];
+                popup_d0f9abb3da8fba77e40ebe4279ba56b3.setContent(html_6cd8d6de7c2b775b42d0e59f3b13be82);
+            
+        
+
+        marker_770a579ea55c9512f512aa11fbcceac1.bindPopup(popup_d0f9abb3da8fba77e40ebe4279ba56b3)
+        ;
+
+        
+    
+    
+                marker_770a579ea55c9512f512aa11fbcceac1.setIcon(icon_4b07a03469ff829f3da442f44e31385a);
+            
+    
+            var marker_821e3475a88cc6c008ce3fb26c3b40cf = L.marker(
+                [41.3853, 2.1538],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_f3a07ab53773f0efe8bab78e4870a1bd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_55689736e982bee3184ea4c719cd8d78 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ba9bc403905813fb4725a2512fb9189 = $(`<div id="html_7ba9bc403905813fb4725a2512fb9189" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Eixample<br>Ubicació: Av. Roma - c/ Comte Urgell<br>Districte: Eixample<br>Categoria: Playa</div>`)[0];
+                popup_55689736e982bee3184ea4c719cd8d78.setContent(html_7ba9bc403905813fb4725a2512fb9189);
+            
+        
+
+        marker_821e3475a88cc6c008ce3fb26c3b40cf.bindPopup(popup_55689736e982bee3184ea4c719cd8d78)
+        ;
+
+        
+    
+    
+                marker_821e3475a88cc6c008ce3fb26c3b40cf.setIcon(icon_f3a07ab53773f0efe8bab78e4870a1bd);
+            
+    
+            var marker_3a062b7132ab04c64dce2d9c52d34312 = L.marker(
+                [41.3987, 2.1534],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_1c482415bff9f7509fcedb7a94f22099 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b1be05feeaf0b71e35dd17fb7acba61d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_186b124ee7786ce4a9c649f1d3606de7 = $(`<div id="html_186b124ee7786ce4a9c649f1d3606de7" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Gràcia<br>Ubicació: Plaça Gal·la Placídia (Via Augusta - Travessera de Gràcia)<br>Districte: Gracia<br>Categoria: Playa</div>`)[0];
+                popup_b1be05feeaf0b71e35dd17fb7acba61d.setContent(html_186b124ee7786ce4a9c649f1d3606de7);
+            
+        
+
+        marker_3a062b7132ab04c64dce2d9c52d34312.bindPopup(popup_b1be05feeaf0b71e35dd17fb7acba61d)
+        ;
+
+        
+    
+    
+                marker_3a062b7132ab04c64dce2d9c52d34312.setIcon(icon_1c482415bff9f7509fcedb7a94f22099);
+            
+    
+            var marker_811018b69c722a4df23e244251600367 = L.marker(
+                [41.3987, 2.1534],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_f4577cdbdaf7bf2fec4596e7bdb8ed07 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86a3ae17f619f6dec04cdf3cd06be188 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fbca566245b62f8020a51140449ed1f2 = $(`<div id="html_fbca566245b62f8020a51140449ed1f2" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Gràcia<br>Ubicació: Plaça Gal·la Placídia (Via Augusta - Travessera de Gràcia)<br>Districte: Gracia<br>Categoria: Playa</div>`)[0];
+                popup_86a3ae17f619f6dec04cdf3cd06be188.setContent(html_fbca566245b62f8020a51140449ed1f2);
+            
+        
+
+        marker_811018b69c722a4df23e244251600367.bindPopup(popup_86a3ae17f619f6dec04cdf3cd06be188)
+        ;
+
+        
+    
+    
+                marker_811018b69c722a4df23e244251600367.setIcon(icon_f4577cdbdaf7bf2fec4596e7bdb8ed07);
+            
+    
+            var marker_9ae3311e1466f4119bdc64c8d3f11437 = L.marker(
+                [41.3987, 2.1534],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_bccadca1610edae2189c65ea30bae4ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f30f47b41a7113135ff57920b67a6dea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_805ecf343d0eda9832c02f3d045da4c2 = $(`<div id="html_805ecf343d0eda9832c02f3d045da4c2" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Gràcia<br>Ubicació: Plaça Gal·la Placídia (Via Augusta - Travessera de Gràcia)<br>Districte: Gracia<br>Categoria: Playa</div>`)[0];
+                popup_f30f47b41a7113135ff57920b67a6dea.setContent(html_805ecf343d0eda9832c02f3d045da4c2);
+            
+        
+
+        marker_9ae3311e1466f4119bdc64c8d3f11437.bindPopup(popup_f30f47b41a7113135ff57920b67a6dea)
+        ;
+
+        
+    
+    
+                marker_9ae3311e1466f4119bdc64c8d3f11437.setIcon(icon_bccadca1610edae2189c65ea30bae4ee);
+            
+    
+            var marker_3e71059f9e6db704c85dadf7f4015b4e = L.marker(
+                [41.3987, 2.1534],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_9c388394aea9904eb93a0accf3aa2abd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_77b90523fa4a04ef9d8b5719e43a4ec7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf7c7ccffe299921705f2266a5b96f21 = $(`<div id="html_bf7c7ccffe299921705f2266a5b96f21" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Gràcia<br>Ubicació: Plaça Gal·la Placídia (Via Augusta - Travessera de Gràcia)<br>Districte: Gracia<br>Categoria: Playa</div>`)[0];
+                popup_77b90523fa4a04ef9d8b5719e43a4ec7.setContent(html_bf7c7ccffe299921705f2266a5b96f21);
+            
+        
+
+        marker_3e71059f9e6db704c85dadf7f4015b4e.bindPopup(popup_77b90523fa4a04ef9d8b5719e43a4ec7)
+        ;
+
+        
+    
+    
+                marker_3e71059f9e6db704c85dadf7f4015b4e.setIcon(icon_9c388394aea9904eb93a0accf3aa2abd);
+            
+    
+            var marker_be59f581c20a17b67319fa58a7b7e2f0 = L.marker(
+                [41.3987, 2.1534],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_feb77c8ed6586a64cdad6f667a3806f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5fed93a3b19902afc63e6434466db358 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_efb4d7bdd6d31018fc8f18a538ea0f22 = $(`<div id="html_efb4d7bdd6d31018fc8f18a538ea0f22" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Gràcia<br>Ubicació: Plaça Gal·la Placídia (Via Augusta - Travessera de Gràcia)<br>Districte: Gracia<br>Categoria: Playa</div>`)[0];
+                popup_5fed93a3b19902afc63e6434466db358.setContent(html_efb4d7bdd6d31018fc8f18a538ea0f22);
+            
+        
+
+        marker_be59f581c20a17b67319fa58a7b7e2f0.bindPopup(popup_5fed93a3b19902afc63e6434466db358)
+        ;
+
+        
+    
+    
+                marker_be59f581c20a17b67319fa58a7b7e2f0.setIcon(icon_feb77c8ed6586a64cdad6f667a3806f2);
+            
+    
+            var marker_01e62d85c61e61d2b6dda9151d082eef = L.marker(
+                [41.3987, 2.1534],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_fde7ad97c3170028da1d09cb22a33b82 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_deee68f427e91ddc9a2a03455a4ef396 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_02ad2c71217a6ad47549f2a42f82e080 = $(`<div id="html_02ad2c71217a6ad47549f2a42f82e080" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Gràcia<br>Ubicació: Plaça Gal·la Placídia (Via Augusta - Travessera de Gràcia)<br>Districte: Gracia<br>Categoria: Playa</div>`)[0];
+                popup_deee68f427e91ddc9a2a03455a4ef396.setContent(html_02ad2c71217a6ad47549f2a42f82e080);
+            
+        
+
+        marker_01e62d85c61e61d2b6dda9151d082eef.bindPopup(popup_deee68f427e91ddc9a2a03455a4ef396)
+        ;
+
+        
+    
+    
+                marker_01e62d85c61e61d2b6dda9151d082eef.setIcon(icon_fde7ad97c3170028da1d09cb22a33b82);
+            
+    
+            var marker_9bd9b646af33ea1dd1176a853da00a45 = L.marker(
+                [41.3987, 2.1534],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_c2e90c8695559191c799e505f3dd6bd5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c38102ed5c4de7e8722b7f60f2e59a09 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_92dacecb85c5661172509aaa60797203 = $(`<div id="html_92dacecb85c5661172509aaa60797203" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Gràcia<br>Ubicació: Plaça Gal·la Placídia (Via Augusta - Travessera de Gràcia)<br>Districte: Gracia<br>Categoria: Playa</div>`)[0];
+                popup_c38102ed5c4de7e8722b7f60f2e59a09.setContent(html_92dacecb85c5661172509aaa60797203);
+            
+        
+
+        marker_9bd9b646af33ea1dd1176a853da00a45.bindPopup(popup_c38102ed5c4de7e8722b7f60f2e59a09)
+        ;
+
+        
+    
+    
+                marker_9bd9b646af33ea1dd1176a853da00a45.setIcon(icon_c2e90c8695559191c799e505f3dd6bd5);
+            
+    
+            var marker_00a0e3914f54346dbd8b8617e5f98c35 = L.marker(
+                [41.3864, 2.1874],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_3b486c936a1d013c79726a140d8a6270 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b229ea86e5885d61988a9cee3bd64c57 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_024985769aef467de20df9cf12e2aea4 = $(`<div id="html_024985769aef467de20df9cf12e2aea4" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Ciutadella<br>Ubicació: Parc de la Ciutadella<br>Districte: Ciutat Vella<br>Categoria: Playa</div>`)[0];
+                popup_b229ea86e5885d61988a9cee3bd64c57.setContent(html_024985769aef467de20df9cf12e2aea4);
+            
+        
+
+        marker_00a0e3914f54346dbd8b8617e5f98c35.bindPopup(popup_b229ea86e5885d61988a9cee3bd64c57)
+        ;
+
+        
+    
+    
+                marker_00a0e3914f54346dbd8b8617e5f98c35.setIcon(icon_3b486c936a1d013c79726a140d8a6270);
+            
+    
+            var marker_61b15104b8aa69b1d48888d03b11abe7 = L.marker(
+                [41.3864, 2.1874],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_1bc365b198541bbccb41c94600f1a1d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e91a64c420b148f6a32649826bb8d12c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a7c0204d2f7f8bce36cb0f6543bdedfb = $(`<div id="html_a7c0204d2f7f8bce36cb0f6543bdedfb" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Ciutadella<br>Ubicació: Parc de la Ciutadella<br>Districte: Ciutat Vella<br>Categoria: Playa</div>`)[0];
+                popup_e91a64c420b148f6a32649826bb8d12c.setContent(html_a7c0204d2f7f8bce36cb0f6543bdedfb);
+            
+        
+
+        marker_61b15104b8aa69b1d48888d03b11abe7.bindPopup(popup_e91a64c420b148f6a32649826bb8d12c)
+        ;
+
+        
+    
+    
+                marker_61b15104b8aa69b1d48888d03b11abe7.setIcon(icon_1bc365b198541bbccb41c94600f1a1d3);
+            
+    
+            var marker_aa6b030ce445827e1f1a3d3d9921ac6a = L.marker(
+                [41.3864, 2.1874],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_cc15e9110138a54a1fa70db359c0323e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e4ca04259a275e7a22473492c662afd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e780cbc930186ee6f895f2583f225025 = $(`<div id="html_e780cbc930186ee6f895f2583f225025" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Ciutadella<br>Ubicació: Parc de la Ciutadella<br>Districte: Ciutat Vella<br>Categoria: Playa</div>`)[0];
+                popup_3e4ca04259a275e7a22473492c662afd.setContent(html_e780cbc930186ee6f895f2583f225025);
+            
+        
+
+        marker_aa6b030ce445827e1f1a3d3d9921ac6a.bindPopup(popup_3e4ca04259a275e7a22473492c662afd)
+        ;
+
+        
+    
+    
+                marker_aa6b030ce445827e1f1a3d3d9921ac6a.setIcon(icon_cc15e9110138a54a1fa70db359c0323e);
+            
+    
+            var marker_cee9c37ccad37a95cde9d6576d685aab = L.marker(
+                [41.3864, 2.1874],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_6985d97d1a6af9936018481a54b5ead9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_97d6e0d573b2f2d0571d44b82e5316de = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_245bc7422e28adfe5f290b3e3e3258cf = $(`<div id="html_245bc7422e28adfe5f290b3e3e3258cf" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Ciutadella<br>Ubicació: Parc de la Ciutadella<br>Districte: Ciutat Vella<br>Categoria: Playa</div>`)[0];
+                popup_97d6e0d573b2f2d0571d44b82e5316de.setContent(html_245bc7422e28adfe5f290b3e3e3258cf);
+            
+        
+
+        marker_cee9c37ccad37a95cde9d6576d685aab.bindPopup(popup_97d6e0d573b2f2d0571d44b82e5316de)
+        ;
+
+        
+    
+    
+                marker_cee9c37ccad37a95cde9d6576d685aab.setIcon(icon_6985d97d1a6af9936018481a54b5ead9);
+            
+    
+            var marker_e1fca79cf87be0ba6404231faebe6878 = L.marker(
+                [41.4261, 2.148],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_70b500670234d97941807592f18dffe8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e955fd32ba556c7ed9e60062318fbcfb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e82cbad99f1b7d2a9d43da4f02bcdf28 = $(`<div id="html_e82cbad99f1b7d2a9d43da4f02bcdf28" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Vall Hebron<br>Ubicació: Parc de la Vall d’Hebron. c/ Martí Codolar - c/ Granja Vella<br>Districte: Horta-Guinardo<br>Categoria: Playa</div>`)[0];
+                popup_e955fd32ba556c7ed9e60062318fbcfb.setContent(html_e82cbad99f1b7d2a9d43da4f02bcdf28);
+            
+        
+
+        marker_e1fca79cf87be0ba6404231faebe6878.bindPopup(popup_e955fd32ba556c7ed9e60062318fbcfb)
+        ;
+
+        
+    
+    
+                marker_e1fca79cf87be0ba6404231faebe6878.setIcon(icon_70b500670234d97941807592f18dffe8);
+            
+    
+            var marker_a4fbccb0b9ef56633bb373450980fa23 = L.marker(
+                [41.4261, 2.148],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_947bafc205ce6c765f52887be4112f01 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0dd0392c0740aa1fac3b7577183136dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c45af788982e5b624411dd76fa3d808a = $(`<div id="html_c45af788982e5b624411dd76fa3d808a" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Vall Hebron<br>Ubicació: Parc de la Vall d’Hebron. c/ Martí Codolar - c/ Granja Vella<br>Districte: Horta-Guinardo<br>Categoria: Playa</div>`)[0];
+                popup_0dd0392c0740aa1fac3b7577183136dd.setContent(html_c45af788982e5b624411dd76fa3d808a);
+            
+        
+
+        marker_a4fbccb0b9ef56633bb373450980fa23.bindPopup(popup_0dd0392c0740aa1fac3b7577183136dd)
+        ;
+
+        
+    
+    
+                marker_a4fbccb0b9ef56633bb373450980fa23.setIcon(icon_947bafc205ce6c765f52887be4112f01);
+            
+    
+            var marker_906a478c1c161a3ac2580648cb20ec94 = L.marker(
+                [41.4261, 2.148],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_b64fbc88d368a04dfed883d28af121e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_71b0c330a48c979d9318723471167cdb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d966f7dbda3bb6f53e74d21c45eac82 = $(`<div id="html_5d966f7dbda3bb6f53e74d21c45eac82" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Vall Hebron<br>Ubicació: Parc de la Vall d’Hebron. c/ Martí Codolar - c/ Granja Vella<br>Districte: Horta-Guinardo<br>Categoria: Playa</div>`)[0];
+                popup_71b0c330a48c979d9318723471167cdb.setContent(html_5d966f7dbda3bb6f53e74d21c45eac82);
+            
+        
+
+        marker_906a478c1c161a3ac2580648cb20ec94.bindPopup(popup_71b0c330a48c979d9318723471167cdb)
+        ;
+
+        
+    
+    
+                marker_906a478c1c161a3ac2580648cb20ec94.setIcon(icon_b64fbc88d368a04dfed883d28af121e8);
+            
+    
+            var marker_afc37ef030ed1b24c457263654da7461 = L.marker(
+                [41.4261, 2.148],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_aa984365693521ca84937e01ebd97033 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bc904db7bb937d189d8c43838acf71ed = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ad332f71a8238b5d0a45ebc7a39ab6c = $(`<div id="html_3ad332f71a8238b5d0a45ebc7a39ab6c" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Vall Hebron<br>Ubicació: Parc de la Vall d’Hebron. c/ Martí Codolar - c/ Granja Vella<br>Districte: Horta-Guinardo<br>Categoria: Playa</div>`)[0];
+                popup_bc904db7bb937d189d8c43838acf71ed.setContent(html_3ad332f71a8238b5d0a45ebc7a39ab6c);
+            
+        
+
+        marker_afc37ef030ed1b24c457263654da7461.bindPopup(popup_bc904db7bb937d189d8c43838acf71ed)
+        ;
+
+        
+    
+    
+                marker_afc37ef030ed1b24c457263654da7461.setIcon(icon_aa984365693521ca84937e01ebd97033);
+            
+    
+            var marker_74eb8aa2d3f55bd7f5ae10eebda5c29e = L.marker(
+                [41.4261, 2.148],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_7cec6f5668ddfbc1070b20bfea8a6070 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c080a68173b2dd388ea115e0d0948ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_52a1fb1f2cb4632f94408042583c95f7 = $(`<div id="html_52a1fb1f2cb4632f94408042583c95f7" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Vall Hebron<br>Ubicació: Parc de la Vall d’Hebron. c/ Martí Codolar - c/ Granja Vella<br>Districte: Horta-Guinardo<br>Categoria: Playa</div>`)[0];
+                popup_3c080a68173b2dd388ea115e0d0948ab.setContent(html_52a1fb1f2cb4632f94408042583c95f7);
+            
+        
+
+        marker_74eb8aa2d3f55bd7f5ae10eebda5c29e.bindPopup(popup_3c080a68173b2dd388ea115e0d0948ab)
+        ;
+
+        
+    
+    
+                marker_74eb8aa2d3f55bd7f5ae10eebda5c29e.setIcon(icon_7cec6f5668ddfbc1070b20bfea8a6070);
+            
+    
+            var marker_dca522b8c8a04a3c580b51dfe0af292a = L.marker(
+                [41.4261, 2.148],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_b6a004b6fe0a0621de23652dd0af3150 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86d2e8273ddd169438ab834b328c2ff6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2e974f1e89541f4bcf08f3b15617dd7 = $(`<div id="html_b2e974f1e89541f4bcf08f3b15617dd7" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Vall Hebron<br>Ubicació: Parc de la Vall d’Hebron. c/ Martí Codolar - c/ Granja Vella<br>Districte: Horta-Guinardo<br>Categoria: Playa</div>`)[0];
+                popup_86d2e8273ddd169438ab834b328c2ff6.setContent(html_b2e974f1e89541f4bcf08f3b15617dd7);
+            
+        
+
+        marker_dca522b8c8a04a3c580b51dfe0af292a.bindPopup(popup_86d2e8273ddd169438ab834b328c2ff6)
+        ;
+
+        
+    
+    
+                marker_dca522b8c8a04a3c580b51dfe0af292a.setIcon(icon_b6a004b6fe0a0621de23652dd0af3150);
+            
+    
+            var marker_e139b5060022b667c637244116b6aba5 = L.marker(
+                [41.4261, 2.148],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_d9489d52300be7f830e86edd4b0b4bb6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_850c8b90598ed5e73c7a6b746f968282 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_123d4985568ab44d63e4f05a55895e36 = $(`<div id="html_123d4985568ab44d63e4f05a55895e36" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Vall Hebron<br>Ubicació: Parc de la Vall d’Hebron. c/ Martí Codolar - c/ Granja Vella<br>Districte: Horta-Guinardo<br>Categoria: Playa</div>`)[0];
+                popup_850c8b90598ed5e73c7a6b746f968282.setContent(html_123d4985568ab44d63e4f05a55895e36);
+            
+        
+
+        marker_e139b5060022b667c637244116b6aba5.bindPopup(popup_850c8b90598ed5e73c7a6b746f968282)
+        ;
+
+        
+    
+    
+                marker_e139b5060022b667c637244116b6aba5.setIcon(icon_d9489d52300be7f830e86edd4b0b4bb6);
+            
+    
+            var marker_2017fa079588e327d6e0ab532525fc3d = L.marker(
+                [41.4261, 2.148],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_64f24d9a5dd924d0c7415f068cdfe687 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a93dc474608b1ffd0a2a536d933bcbfb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ee965d6fc3fe3c93ca7108627f9a4fd = $(`<div id="html_5ee965d6fc3fe3c93ca7108627f9a4fd" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Vall Hebron<br>Ubicació: Parc de la Vall d’Hebron. c/ Martí Codolar - c/ Granja Vella<br>Districte: Horta-Guinardo<br>Categoria: Playa</div>`)[0];
+                popup_a93dc474608b1ffd0a2a536d933bcbfb.setContent(html_5ee965d6fc3fe3c93ca7108627f9a4fd);
+            
+        
+
+        marker_2017fa079588e327d6e0ab532525fc3d.bindPopup(popup_a93dc474608b1ffd0a2a536d933bcbfb)
+        ;
+
+        
+    
+    
+                marker_2017fa079588e327d6e0ab532525fc3d.setIcon(icon_64f24d9a5dd924d0c7415f068cdfe687);
+            
+    
+            var marker_715665aa2472d881893fd5c8fa18293f = L.marker(
+                [41.3875, 2.1151],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_85c78bb7233caff36b05dc952f4b6bce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4a22d60bd2f76f55997b948695582282 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_19e237d78423f9b8cfe49b3a8054146d = $(`<div id="html_19e237d78423f9b8cfe49b3a8054146d" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Palau Reial<br>Ubicació: c/ John Maynard Keynes - c/ de Jordi Girona<br>Districte: Les Corts<br>Categoria: Playa</div>`)[0];
+                popup_4a22d60bd2f76f55997b948695582282.setContent(html_19e237d78423f9b8cfe49b3a8054146d);
+            
+        
+
+        marker_715665aa2472d881893fd5c8fa18293f.bindPopup(popup_4a22d60bd2f76f55997b948695582282)
+        ;
+
+        
+    
+    
+                marker_715665aa2472d881893fd5c8fa18293f.setIcon(icon_85c78bb7233caff36b05dc952f4b6bce);
+            
+    
+            var marker_e89701cc79a0973ed7d8a000fd442583 = L.marker(
+                [41.3875, 2.1151],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_08ddd8e6468c0da51dfb595731b59de9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7fa6824ab205185d2f1e79a097ba4a43 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_42d794301e94117c51ad20a07e7d7ba2 = $(`<div id="html_42d794301e94117c51ad20a07e7d7ba2" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Palau Reial<br>Ubicació: c/ John Maynard Keynes - c/ de Jordi Girona<br>Districte: Les Corts<br>Categoria: Playa</div>`)[0];
+                popup_7fa6824ab205185d2f1e79a097ba4a43.setContent(html_42d794301e94117c51ad20a07e7d7ba2);
+            
+        
+
+        marker_e89701cc79a0973ed7d8a000fd442583.bindPopup(popup_7fa6824ab205185d2f1e79a097ba4a43)
+        ;
+
+        
+    
+    
+                marker_e89701cc79a0973ed7d8a000fd442583.setIcon(icon_08ddd8e6468c0da51dfb595731b59de9);
+            
+    
+            var marker_ba9407606a54e9a8c52ee0fb51a8f551 = L.marker(
+                [41.3875, 2.1151],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_70518cce334efd1d418d012c9bb04046 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7f6e350f5b6ada216f8cff934f6ae0e9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e55cede0a54f4b0afc3f3d8b95478a1 = $(`<div id="html_9e55cede0a54f4b0afc3f3d8b95478a1" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Palau Reial<br>Ubicació: c/ John Maynard Keynes - c/ de Jordi Girona<br>Districte: Les Corts<br>Categoria: Playa</div>`)[0];
+                popup_7f6e350f5b6ada216f8cff934f6ae0e9.setContent(html_9e55cede0a54f4b0afc3f3d8b95478a1);
+            
+        
+
+        marker_ba9407606a54e9a8c52ee0fb51a8f551.bindPopup(popup_7f6e350f5b6ada216f8cff934f6ae0e9)
+        ;
+
+        
+    
+    
+                marker_ba9407606a54e9a8c52ee0fb51a8f551.setIcon(icon_70518cce334efd1d418d012c9bb04046);
+            
+    
+            var marker_ff074d1e8d5ed60f0d166714cad84b4b = L.marker(
+                [41.3875, 2.1151],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_ec430d896bd51900315ce4be26d7047d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2fe1b5c96b2dbd4107748404bf7a6d9f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3816a0eda51e8fe8ff33b58a96560533 = $(`<div id="html_3816a0eda51e8fe8ff33b58a96560533" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Palau Reial<br>Ubicació: c/ John Maynard Keynes - c/ de Jordi Girona<br>Districte: Les Corts<br>Categoria: Playa</div>`)[0];
+                popup_2fe1b5c96b2dbd4107748404bf7a6d9f.setContent(html_3816a0eda51e8fe8ff33b58a96560533);
+            
+        
+
+        marker_ff074d1e8d5ed60f0d166714cad84b4b.bindPopup(popup_2fe1b5c96b2dbd4107748404bf7a6d9f)
+        ;
+
+        
+    
+    
+                marker_ff074d1e8d5ed60f0d166714cad84b4b.setIcon(icon_ec430d896bd51900315ce4be26d7047d);
+            
+    
+            var marker_001671370363a5a47e0e5db09353e3bb = L.marker(
+                [41.3875, 2.1151],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_bce7d1338960ee4def71838d72ce6ee8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_72454b33ac1b2d9055bb5bb3151c3c65 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_954d832c4d8ac9942cc4dda15cc2c463 = $(`<div id="html_954d832c4d8ac9942cc4dda15cc2c463" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Palau Reial<br>Ubicació: c/ John Maynard Keynes - c/ de Jordi Girona<br>Districte: Les Corts<br>Categoria: Playa</div>`)[0];
+                popup_72454b33ac1b2d9055bb5bb3151c3c65.setContent(html_954d832c4d8ac9942cc4dda15cc2c463);
+            
+        
+
+        marker_001671370363a5a47e0e5db09353e3bb.bindPopup(popup_72454b33ac1b2d9055bb5bb3151c3c65)
+        ;
+
+        
+    
+    
+                marker_001671370363a5a47e0e5db09353e3bb.setIcon(icon_bce7d1338960ee4def71838d72ce6ee8);
+            
+    
+            var marker_8c34eb56136a8fd615795b72557b0793 = L.marker(
+                [41.3875, 2.1151],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_7c9936821ff16b2e247d080cebfc8f53 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f0a4062f98576f90e8434f0322b3156 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d5e3f28845879fdf249636b9cbbe93bc = $(`<div id="html_d5e3f28845879fdf249636b9cbbe93bc" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Palau Reial<br>Ubicació: c/ John Maynard Keynes - c/ de Jordi Girona<br>Districte: Les Corts<br>Categoria: Playa</div>`)[0];
+                popup_3f0a4062f98576f90e8434f0322b3156.setContent(html_d5e3f28845879fdf249636b9cbbe93bc);
+            
+        
+
+        marker_8c34eb56136a8fd615795b72557b0793.bindPopup(popup_3f0a4062f98576f90e8434f0322b3156)
+        ;
+
+        
+    
+    
+                marker_8c34eb56136a8fd615795b72557b0793.setIcon(icon_7c9936821ff16b2e247d080cebfc8f53);
+            
+    
+            var marker_cea959f2c9411fae358176f237738616 = L.marker(
+                [41.3875, 2.1151],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_da10bc35fdc9a6ecdb6bb0de3d620721 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_39d1221332feb8b2ec49cfb26add6f38 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cac737a88f85870d21ada0cc27a40622 = $(`<div id="html_cac737a88f85870d21ada0cc27a40622" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Palau Reial<br>Ubicació: c/ John Maynard Keynes - c/ de Jordi Girona<br>Districte: Les Corts<br>Categoria: Playa</div>`)[0];
+                popup_39d1221332feb8b2ec49cfb26add6f38.setContent(html_cac737a88f85870d21ada0cc27a40622);
+            
+        
+
+        marker_cea959f2c9411fae358176f237738616.bindPopup(popup_39d1221332feb8b2ec49cfb26add6f38)
+        ;
+
+        
+    
+    
+                marker_cea959f2c9411fae358176f237738616.setIcon(icon_da10bc35fdc9a6ecdb6bb0de3d620721);
+            
+    
+            var marker_4d1ab1c883324b8330d21db7ea74cdd0 = L.marker(
+                [41.3875, 2.1151],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_008eaa31e21b3eed70d6d8a692657a28 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_17669da965dd315817a1e52cc4aed2bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e64984eaa778b4ccf2aa313fa4d38feb = $(`<div id="html_e64984eaa778b4ccf2aa313fa4d38feb" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Palau Reial<br>Ubicació: c/ John Maynard Keynes - c/ de Jordi Girona<br>Districte: Les Corts<br>Categoria: Playa</div>`)[0];
+                popup_17669da965dd315817a1e52cc4aed2bc.setContent(html_e64984eaa778b4ccf2aa313fa4d38feb);
+            
+        
+
+        marker_4d1ab1c883324b8330d21db7ea74cdd0.bindPopup(popup_17669da965dd315817a1e52cc4aed2bc)
+        ;
+
+        
+    
+    
+                marker_4d1ab1c883324b8330d21db7ea74cdd0.setIcon(icon_008eaa31e21b3eed70d6d8a692657a28);
+            
+    
+            var marker_3e6d24a43e6c280b689b75233b55be6c = L.marker(
+                [41.3875, 2.1151],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_100355ef37cbdba9694b3e2fc5995d20 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ddee010999c03f1a9b355d2508900afb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_632974531845480f9239e881842258f5 = $(`<div id="html_632974531845480f9239e881842258f5" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Palau Reial<br>Ubicació: c/ John Maynard Keynes - c/ de Jordi Girona<br>Districte: Les Corts<br>Categoria: Playa</div>`)[0];
+                popup_ddee010999c03f1a9b355d2508900afb.setContent(html_632974531845480f9239e881842258f5);
+            
+        
+
+        marker_3e6d24a43e6c280b689b75233b55be6c.bindPopup(popup_ddee010999c03f1a9b355d2508900afb)
+        ;
+
+        
+    
+    
+                marker_3e6d24a43e6c280b689b75233b55be6c.setIcon(icon_100355ef37cbdba9694b3e2fc5995d20);
+            
+    
+            var marker_012fdc44cff21a28853d00811f9f8d20 = L.marker(
+                [41.3875, 2.1151],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_a19f08164ca6b89866d04f2ea65a91d5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ac599a475a46afafee9c9c550a780b88 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ea4177e128d17e98b357e7a33ca023b = $(`<div id="html_2ea4177e128d17e98b357e7a33ca023b" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Palau Reial<br>Ubicació: c/ John Maynard Keynes - c/ de Jordi Girona<br>Districte: Les Corts<br>Categoria: Playa</div>`)[0];
+                popup_ac599a475a46afafee9c9c550a780b88.setContent(html_2ea4177e128d17e98b357e7a33ca023b);
+            
+        
+
+        marker_012fdc44cff21a28853d00811f9f8d20.bindPopup(popup_ac599a475a46afafee9c9c550a780b88)
+        ;
+
+        
+    
+    
+                marker_012fdc44cff21a28853d00811f9f8d20.setIcon(icon_a19f08164ca6b89866d04f2ea65a91d5);
+            
+    
+            var marker_e4a5f595eab8cd04f4d1054a526551f6 = L.marker(
+                [41.3875, 2.1151],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_ab7ab4c0ada5b1e281a6144fb274cd9a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_401a0de383c21cc88b8fae345d785399 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_08623d77ff10b04d36927d422704485e = $(`<div id="html_08623d77ff10b04d36927d422704485e" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Palau Reial<br>Ubicació: c/ John Maynard Keynes - c/ de Jordi Girona<br>Districte: Les Corts<br>Categoria: Playa</div>`)[0];
+                popup_401a0de383c21cc88b8fae345d785399.setContent(html_08623d77ff10b04d36927d422704485e);
+            
+        
+
+        marker_e4a5f595eab8cd04f4d1054a526551f6.bindPopup(popup_401a0de383c21cc88b8fae345d785399)
+        ;
+
+        
+    
+    
+                marker_e4a5f595eab8cd04f4d1054a526551f6.setIcon(icon_ab7ab4c0ada5b1e281a6144fb274cd9a);
+            
+    
+            var marker_28001eabdb4597864575b494f41622f6 = L.marker(
+                [41.3875, 2.1151],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_38d8d77faa52ae3068d425ac0a47dde1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_26edd0fe74395168a8f41e465fc78b7e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fd320dc65d9cf5dd5db446d7e125c0ad = $(`<div id="html_fd320dc65d9cf5dd5db446d7e125c0ad" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Palau Reial<br>Ubicació: c/ John Maynard Keynes - c/ de Jordi Girona<br>Districte: Les Corts<br>Categoria: Playa</div>`)[0];
+                popup_26edd0fe74395168a8f41e465fc78b7e.setContent(html_fd320dc65d9cf5dd5db446d7e125c0ad);
+            
+        
+
+        marker_28001eabdb4597864575b494f41622f6.bindPopup(popup_26edd0fe74395168a8f41e465fc78b7e)
+        ;
+
+        
+    
+    
+                marker_28001eabdb4597864575b494f41622f6.setIcon(icon_38d8d77faa52ae3068d425ac0a47dde1);
+            
+    
+            var marker_8485fcae15f986164969da7e95bf7ff5 = L.marker(
+                [41.3875, 2.1151],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_8537c102fab64fe179a5b23bc4402eb9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c8f68b7b983fd4e7b025f866d31ec0c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d6a91edca8254454309426dd6c63fe0 = $(`<div id="html_7d6a91edca8254454309426dd6c63fe0" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Palau Reial<br>Ubicació: c/ John Maynard Keynes - c/ de Jordi Girona<br>Districte: Les Corts<br>Categoria: Playa</div>`)[0];
+                popup_7c8f68b7b983fd4e7b025f866d31ec0c.setContent(html_7d6a91edca8254454309426dd6c63fe0);
+            
+        
+
+        marker_8485fcae15f986164969da7e95bf7ff5.bindPopup(popup_7c8f68b7b983fd4e7b025f866d31ec0c)
+        ;
+
+        
+    
+    
+                marker_8485fcae15f986164969da7e95bf7ff5.setIcon(icon_8537c102fab64fe179a5b23bc4402eb9);
+            
+    
+            var marker_a4458576722807e7a6c324c385635747 = L.marker(
+                [41.3875, 2.1151],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_e8788e2a22a78d377a7f18d37af22537 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_692df8efd3b018619b6d732a147bbec2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3fdb2a0f7d347bb407f3ba0f38d57e3e = $(`<div id="html_3fdb2a0f7d347bb407f3ba0f38d57e3e" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Palau Reial<br>Ubicació: c/ John Maynard Keynes - c/ de Jordi Girona<br>Districte: Les Corts<br>Categoria: Playa</div>`)[0];
+                popup_692df8efd3b018619b6d732a147bbec2.setContent(html_3fdb2a0f7d347bb407f3ba0f38d57e3e);
+            
+        
+
+        marker_a4458576722807e7a6c324c385635747.bindPopup(popup_692df8efd3b018619b6d732a147bbec2)
+        ;
+
+        
+    
+    
+                marker_a4458576722807e7a6c324c385635747.setIcon(icon_e8788e2a22a78d377a7f18d37af22537);
+            
+    
+            var marker_0a883d0ccc9926798db0639a32d191c6 = L.marker(
+                [41.3875, 2.1151],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_a1c7ef993f66f447139ecc4dc2b19a0f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_93951d5a35cdd1e1153524d0646f55c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e5de6416595f02579a713116f6bc61a = $(`<div id="html_8e5de6416595f02579a713116f6bc61a" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Palau Reial<br>Ubicació: c/ John Maynard Keynes - c/ de Jordi Girona<br>Districte: Les Corts<br>Categoria: Playa</div>`)[0];
+                popup_93951d5a35cdd1e1153524d0646f55c2.setContent(html_8e5de6416595f02579a713116f6bc61a);
+            
+        
+
+        marker_0a883d0ccc9926798db0639a32d191c6.bindPopup(popup_93951d5a35cdd1e1153524d0646f55c2)
+        ;
+
+        
+    
+    
+                marker_0a883d0ccc9926798db0639a32d191c6.setIcon(icon_a1c7ef993f66f447139ecc4dc2b19a0f);
+            
+    
+            var marker_74dc2de319ab1f4a33a3d38acb574910 = L.marker(
+                [41.3875, 2.1151],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_e8473e42b172fb9e5475c357996cafbf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a2ea5c4bb751790555cab24011a16b64 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf737e9113d9452b88b846cce00ae0ce = $(`<div id="html_bf737e9113d9452b88b846cce00ae0ce" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Palau Reial<br>Ubicació: c/ John Maynard Keynes - c/ de Jordi Girona<br>Districte: Les Corts<br>Categoria: Playa</div>`)[0];
+                popup_a2ea5c4bb751790555cab24011a16b64.setContent(html_bf737e9113d9452b88b846cce00ae0ce);
+            
+        
+
+        marker_74dc2de319ab1f4a33a3d38acb574910.bindPopup(popup_a2ea5c4bb751790555cab24011a16b64)
+        ;
+
+        
+    
+    
+                marker_74dc2de319ab1f4a33a3d38acb574910.setIcon(icon_e8473e42b172fb9e5475c357996cafbf);
+            
+    
+            var marker_3ebf65a6dcb9bdef7be0129da0d71db7 = L.marker(
+                [41.41843, 2.1239],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_5dd28b2e957d5f9de5618846097718f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3a64d9e940346a8f1aa0bd6fdd49edae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b763b262516ea5e376b4915ff7f243f = $(`<div id="html_7b763b262516ea5e376b4915ff7f243f" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Observatori Fabra<br>Ubicació: Camí de l'Observatori-s/n<br>Districte: Sarria-Sant Gervasi<br>Categoria: Playa</div>`)[0];
+                popup_3a64d9e940346a8f1aa0bd6fdd49edae.setContent(html_7b763b262516ea5e376b4915ff7f243f);
+            
+        
+
+        marker_3ebf65a6dcb9bdef7be0129da0d71db7.bindPopup(popup_3a64d9e940346a8f1aa0bd6fdd49edae)
+        ;
+
+        
+    
+    
+                marker_3ebf65a6dcb9bdef7be0129da0d71db7.setIcon(icon_5dd28b2e957d5f9de5618846097718f7);
+            
+    
+            var marker_e428e6a2a0fc1ddb299e1940e3fddde0 = L.marker(
+                [41.41843, 2.1239],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_62d785f7ae76e75b25552b7279178bf0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_48eedd83b879b5ac2b8e6f5b944f91ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c69b2f81b86616730374f284faf81ef4 = $(`<div id="html_c69b2f81b86616730374f284faf81ef4" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Observatori Fabra<br>Ubicació: Camí de l'Observatori-s/n<br>Districte: Sarria-Sant Gervasi<br>Categoria: Playa</div>`)[0];
+                popup_48eedd83b879b5ac2b8e6f5b944f91ac.setContent(html_c69b2f81b86616730374f284faf81ef4);
+            
+        
+
+        marker_e428e6a2a0fc1ddb299e1940e3fddde0.bindPopup(popup_48eedd83b879b5ac2b8e6f5b944f91ac)
+        ;
+
+        
+    
+    
+                marker_e428e6a2a0fc1ddb299e1940e3fddde0.setIcon(icon_62d785f7ae76e75b25552b7279178bf0);
+            
+    
+            var marker_f8de9a167f5513fc2cd0f93c6e6a843b = L.marker(
+                [41.41843, 2.1239],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_8bf9297e263c3840b9ddcb679059b2ce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_851a644ebb610c6b514960afc80b2cf0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d603531e0cfc23bdced63f967a6a3b59 = $(`<div id="html_d603531e0cfc23bdced63f967a6a3b59" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Observatori Fabra<br>Ubicació: Camí de l'Observatori-s/n<br>Districte: Sarria-Sant Gervasi<br>Categoria: Playa</div>`)[0];
+                popup_851a644ebb610c6b514960afc80b2cf0.setContent(html_d603531e0cfc23bdced63f967a6a3b59);
+            
+        
+
+        marker_f8de9a167f5513fc2cd0f93c6e6a843b.bindPopup(popup_851a644ebb610c6b514960afc80b2cf0)
+        ;
+
+        
+    
+    
+                marker_f8de9a167f5513fc2cd0f93c6e6a843b.setIcon(icon_8bf9297e263c3840b9ddcb679059b2ce);
+            
+    
+            var marker_02a0a8c275643007d4de46d9c2ac2850 = L.marker(
+                [41.41843, 2.1239],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_431e5f65fc8deb803f979d30c4aeb75a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1f09e8d545dba438c1432148abccd87a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1a7525130fd416f014763a9eab2ae5c1 = $(`<div id="html_1a7525130fd416f014763a9eab2ae5c1" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Observatori Fabra<br>Ubicació: Camí de l'Observatori-s/n<br>Districte: Sarria-Sant Gervasi<br>Categoria: Playa</div>`)[0];
+                popup_1f09e8d545dba438c1432148abccd87a.setContent(html_1a7525130fd416f014763a9eab2ae5c1);
+            
+        
+
+        marker_02a0a8c275643007d4de46d9c2ac2850.bindPopup(popup_1f09e8d545dba438c1432148abccd87a)
+        ;
+
+        
+    
+    
+                marker_02a0a8c275643007d4de46d9c2ac2850.setIcon(icon_431e5f65fc8deb803f979d30c4aeb75a);
+            
+    
+            var marker_9f79377a2223606d570de438da0ec707 = L.marker(
+                [41.41843, 2.1239],
+                {
+}
+            ).addTo(map_107650d07d5badfb656f352003e8b3f3);
+        
+    
+            var icon_95bdfced87608fa7fc60883e7dc85569 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cceaadbce28d1d7d7ed5d36703ba6665 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cfadaaef9654fea5e4c858e305bf29c8 = $(`<div id="html_cfadaaef9654fea5e4c858e305bf29c8" style="width: 100.0%; height: 100.0%;">Estació: Barcelona - Observatori Fabra<br>Ubicació: Camí de l'Observatori-s/n<br>Districte: Sarria-Sant Gervasi<br>Categoria: Playa</div>`)[0];
+                popup_cceaadbce28d1d7d7ed5d36703ba6665.setContent(html_cfadaaef9654fea5e4c858e305bf29c8);
+            
+        
+
+        marker_9f79377a2223606d570de438da0ec707.bindPopup(popup_cceaadbce28d1d7d7ed5d36703ba6665)
+        ;
+
+        
+    
+    
+                marker_9f79377a2223606d570de438da0ec707.setIcon(icon_95bdfced87608fa7fc60883e7dc85569);
+            
+</script>
+</html>
