@@ -26,15 +26,6 @@ El análisis se realiza en un **Jupyter Notebook**, incluyendo los siguientes pa
   - Gráficos de líneas para la evolución horaria del O₃ y otros contaminantes
   - Comparaciones entre estaciones de medición
 
-## 📂 Estructura del repositorio
-
-```
-📂 data/          # Datos utilizados en el análisis
-📂 notebooks/         # Jupyter Notebook con el análisis
-📂 src/           # Gráficos generados
-📜 README.md          # Descripción del proyecto
-```
-
 ## 🚀 Requisitos
 
 - Python 3.x
@@ -44,5 +35,12 @@ El análisis se realiza en un **Jupyter Notebook**, incluyendo los siguientes pa
 ## 📈 Resultados esperados
 
 Este análisis permitirá comprender mejor la evolución de la contaminación en Barcelona y ayudar a futuras investigaciones sobre calidad del aire.
+
+## 👫 Integrantes del grupo
+
+Este proyecto fue realizado por:
+
+- **German Bueno**
+- **Arnau González**
 
 ¡Siéntete libre de contribuir o utilizar el código para otros estudios! 💡
