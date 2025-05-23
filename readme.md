@@ -40,24 +40,25 @@ tu_proyecto/
 En la carpeta `reports`, se encuentran varias subcarpetas que contienen visualizaciones y análisis específicos:
 
 - **Correlaciones**:
-  - ![Gráfico de pares de estaciones](reports\correlaciones\pairplot_estaciones.png)
-  - ![Matriz de correlación entre variables](reports\correlaciones\matriz_correlacion.png)
+  - ![Gráfico de pares de estaciones](reports/correlaciones/pairplot_estaciones.png)
+  - ![Matriz de correlación entre variables](reports/correlaciones/matriz_correlacion.png)
 
 - **Eventos**:
-  - ![Relación entre gases y variables meteorológicas](reports\eventos\relaciones_gases_meteo.png)
+  - ![Relación entre gases y variables meteorológicas](reports/eventos/relaciones_gases_meteo.png)
 
 - **Exploración**:
-  - ![Mapa de calor de estaciones](reports\exploracion\heatmap_estaciones.png)
-  - ![Histogramas de contaminantes](reports\exploracion\histogramas_contaminantes.png)
+  - ![Mapa de calor de estaciones](reports/exploracion/heatmap_estaciones.png)
+  - ![Histogramas de contaminantes](reports/exploracion/histogramas_contaminantes.png)
 
 - **Temporal**:
-  - ![Evolución mensual de contaminantes](reports\temporal\evolucion_mensual.png)
+  - ![Evolución mensual de contaminantes](reports/temporal/evolucion_mensual.png)
 
 - **Visualizaciones**:
-  - ![Cargas factoriales del Análisis de Componentes Principales (PCA)](reports\visualizaciones\pca_cargas_factoriales.png)
+  - ![Cargas factoriales del Análisis de Componentes Principales (PCA)](reports/visualizaciones/pca_cargas_factoriales.png)
 
 - **Estacionalidad**:
-  - ![Gráficos de estacionalidad para cada contaminante](reports\estacionalidad\estacionalidad_contaminantes.png)
+  - ![Gráficos de estacionalidad para cada contaminante](reports/estacionalidad/estacionalidad_contaminantes.png)
+
 
 
 ## Requisitos
