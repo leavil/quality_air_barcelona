@@ -1,46 +1,161 @@
-# 📊 Análisis Exploratorio de la Calidad del Aire en Barcelona
+# Análisis de la Calidad del Aire en Barcelona
 
-Este repositorio contiene un análisis exploratorio de datos (EDA) sobre la evolución de los contaminantes en Barcelona, con especial enfoque en el ozono (O₃). Se trabaja con datos de estaciones de medición distribuidas por la ciudad para identificar patrones diarios y diferencias según la ubicación.
+Este proyecto realiza un análisis exploratorio de los niveles de contaminación atmosférica en distintas estaciones de la ciudad de Barcelona. Utiliza técnicas estadísticas y de visualización para estudiar la evolución de contaminantes como el ozono (O₃), NO₂ y PM₁₀, entre otros.
 
-## 📌 Objetivos
+## Autores
 
-1. **Evolución del O₃**: Analizar cómo varía la concentración de ozono a lo largo del día en diferentes zonas de Barcelona. Se seleccionan cuatro estaciones de medición representativas:
-   - Dos en barrios cercanos al mar.
-   - Dos en el centro de la ciudad.
-   - Dos en la parte alta.
-2. **Evolución de otros contaminantes**: Estudio de las tendencias horarias de otros contaminantes relevantes.
+- **Arnau González Almirall**
+- **Germán Bueno Lozano**
 
-## 🛠️ Metodología
+## Descripción del Proyecto
 
-El análisis se realiza en un **Jupyter Notebook**, incluyendo los siguientes pasos:
+Este proyecto tiene como objetivo realizar un análisis exploratorio de datos (EDA) sobre la calidad del aire en Barcelona, considerando los datos meteorológicos de lluvia y temperatura. El análisis incluye la exploración de correlaciones, eventos extremos, tendencias temporales y visualizaciones de datos para identificar patrones y relaciones entre los contaminantes y las variables meteorológicas.
 
-- **Carga y exploración inicial de los datos**
-  - Estadística descriptiva
-  - Identificación de valores ausentes y posibles errores
-  - Visualización con boxplots
-- **Transformaciones de datos**
-  - Eliminación de atributos redundantes
-  - Tratamiento de valores ausentes
-  - Escalado y normalización si es necesario
-- **Visualización y análisis**
-  - Gráficos de líneas para la evolución horaria del O₃ y otros contaminantes
-  - Comparaciones entre estaciones de medición
+## Estructura de Carpetas
 
-## 🚀 Requisitos
+```
+tu_proyecto/
+├── .ipynb_checkpoints/
+├── data/
+├── docs/
+├── notebooks/
+├── reports/
+│   ├── correlaciones/
+│   ├── eventos/
+│   ├── exploración/
+│   ├── temporal/
+│   ├── visualizaciones/
+│   └── ....
+├── src/
+├── tools/
+├── .gitattributes
+├── .gitignore
+├── descomprimir_datos.py
+├── link
+├── README.md
+└── requirements.txt
 
-- Python 3.x
-- Jupyter Notebook
-- Pandas, NumPy, Matplotlib, Seaborn
+```
 
-## 📈 Resultados esperados
+En la carpeta `reports`, se encuentran varias subcarpetas que contienen visualizaciones y análisis específicos:
 
-Este análisis permitirá comprender mejor la evolución de la contaminación en Barcelona y ayudar a futuras investigaciones sobre calidad del aire.
+- **Correlaciones**:
+  - ![Gráfico de pares de estaciones](../reports/correlaciones/pairplot_estaciones.png)
+  - ![Matriz de correlación entre variables](../reports/correlaciones/matriz_correlacion.png)
 
-## 👫 Integrantes del grupo
+- **Eventos**:
+  - ![Relación entre gases y variables meteorológicas](../reports/eventos/relaciones_gases_meteo.png)
 
-Este proyecto fue realizado por:
+- **Exploración**:
+  - ![Mapa de calor de estaciones](../reports/exp/heatmap_estaciones.png)
+  - ![Histogramas de contaminantes](../reports/exp/histogramas_contaminantes.png)
 
-- **German Bueno**
-- **Arnau González**
+- **Temporal**:
+  - ![Evolución mensual de contaminantes](../reports/temporal/evolucion_mensual.png)
 
-¡Siéntete libre de contribuir o utilizar el código para otros estudios! 💡
+- **Visualizaciones**:
+  - ![Cargas factoriales del Análisis de Componentes Principales (PCA)](../reports/visualizaciones/pca_cargas_factoriales.png)
+
+- **Estacionalidad**:
+  - ![Gráficos de estacionalidad para cada contaminante](../reports/estacionalidad/estacionalidad_NO2.png)
+
+
+## Requisitos
+
+### Instalación completa
+
+Para instalar todos los paquetes necesarios, incluyendo soporte geoespacial:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Instalación mínima (sin geoespacial)
+
+Para ejecutar el análisis sin funcionalidades geoespaciales:
+
+```bash
+pip install pandas numpy matplotlib seaborn plotly scikit-learn jupyter py7zr
+```
+
+## Descompresión de los datos
+
+Debido al tamaño de los archivos, estos se proporcionan comprimidos en formato `.7z`.
+
+### Requisitos previos
+
+Instala el paquete necesario para la descompresión:
+
+```bash
+pip install py7zr
+```
+
+### Estructura de carpetas esperada
+
+```
+tu_proyecto/
+├── notebooks/
+│   └── quality_air_bcn_final.7z
+├── descomprimir_datos.py
+└── ...
+```
+
+### Ejecución del script de descompresión
+
+```bash
+python descomprimir_datos.py
+```
+
+### Características del script `descomprimir_datos.py`
+
+- Verifica que los archivos existan antes de intentar descomprimirlos.
+- Crea automáticamente la carpeta `notebooks/datos_descomprimidos/`.
+- Maneja errores durante la descompresión de forma segura.
+- Proporciona mensajes claros sobre el estado del proceso.
+
+## Objetivo del Trabajo
+
+Realizar un análisis exploratorio de datos (EDA) sobre la calidad del aire en Barcelona, considerando los datos meteorológicos de lluvia y temperatura.
+
+## Datos a Utilizar
+
+- Datos de calidad del aire (por ejemplo, niveles de PM2.5, PM10, NO2, O3, SO2, CO).
+- Datos meteorológicos (lluvia y temperatura).
+
+## Pasos a Seguir
+
+1. **Carga y Limpieza de Datos**:
+   - Cargar los datasets de calidad del aire y meteorológicos.
+   - Realizar una limpieza inicial de los datos: manejo de valores faltantes, eliminación de duplicados, corrección de formatos, etc.
+
+2. **Exploración Inicial**:
+   - Realizar un resumen estadístico de los datos (media, mediana, desviación estándar, valores mínimos y máximos).
+   - Visualizar la distribución de las variables principales (histogramas, boxplots).
+
+3. **Análisis de Correlación**:
+   - Calcular y visualizar la matriz de correlación entre las variables de calidad del aire y las variables meteorológicas.
+   - Identificar posibles relaciones entre la lluvia, la temperatura y los contaminantes del aire.
+
+4. **Análisis Temporal**:
+   - Analizar las tendencias temporales de los contaminantes y las variables meteorológicas (gráficos de series temporales).
+   - Identificar patrones estacionales o diarios en los datos.
+
+5. **Análisis de Eventos Extremos**:
+   - Identificar días con niveles extremos de contaminación o condiciones meteorológicas inusuales.
+   - Analizar cómo estos eventos extremos afectan la calidad del aire.
+
+6. **Visualización de Datos**:
+   - Crear visualizaciones que muestren la relación entre la lluvia, la temperatura y la calidad del aire (gráficos de dispersión, mapas de calor).
+   - Utilizar mapas para visualizar la distribución espacial de los contaminantes en Barcelona.
+
+7. **Análisis de Componentes Principales (PCA)**:
+   - Aplicar PCA para reducir la dimensionalidad de los datos y identificar los componentes principales que explican la variabilidad en los datos.
+
+8. **Conclusiones y Recomendaciones**:
+   - Resumir los hallazgos principales del análisis.
+   - Proponer recomendaciones basadas en los resultados del EDA.
+
+## Herramientas y Librerías a Utilizar
+
+- Python con librerías como Pandas, NumPy, Matplotlib, Seaborn, Plotly, y Scikit-learn.
+- Jupyter Notebook para la documentación y visualización del análisis.

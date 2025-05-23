@@ -1,0 +1,6 @@
+# Ignorar checkpoints de Jupyter
+notebooks/.ipynb_checkpoints/
+reports/.ipynb_checkpoints/
+
+# Ignorar archivos HTML grandes si no son necesarios
+reports/*.html
